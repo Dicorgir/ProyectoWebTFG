@@ -1,0 +1,222 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente del cuerpo */
+    display: flex; /* Muestra los elementos en línea */
+    justify-content: center; /* Alinea el contenido al centro horizontalmente */
+    align-items: center; /* Alinea el contenido al centro verticalmente */
+    height: 100vh; /* Alto del cuerpo */
+    margin: 0; /* Quita el margen */
+    background-color: #f0f0f0;  /* Color de fondo del cuerpo */
+    position: relative; /* Para que los elementos dentro del body se posicionen correctamente */
+}
+/* Estilos para el contenedor principal */
+.wrapper {
+    --input-focus: #b14be0; /* Color de foco del input */
+    --font-color: #323232; /* Color del texto principal */
+    --font-color-sub: #666666; /* Color del texto secundario */
+    --bg-color: #fff; /* Color de fondo */
+    --bg-color-alt: #666; /* Color de fondo alternativo */
+    --main-color: #323232; /* Color principal */
+    display: flex; /* Muestra los elementos en línea */
+    justify-content: center; /* Alinea el contenido al centro horizontalmente */
+    align-items: center; /* Alinea el contenido al centro verticalmente */
+    width: 100%; /* Ancho del contenedor */
+    height: 100%; /* Alto del contenedor */
+    background-color: transparent; /* Cambiado a transparente */
+    position: relative; /* Para que el contenido dentro de .wrapper sea posicionado relativo a este contenedor */
+    margin-bottom: 10%; /* Margen inferior */
+}
+/* Estilos para el contenedor de la tarjeta */
+#particles-js {
+    position: absolute; /* Posición absoluta */
+    width: 100%; /* Ancho del contenedor */
+    height: 100%; /* Alto del contenedor */
+    top: 0; /* Posiciona el contenedor arriba */
+    left: 0; /* Posiciona el contenedor a la izquierda */
+    z-index: -1; /* Asegúrate de que las partículas estén detrás del contenido */
+}
+
+/* Estilos para el switch */
+.switch {
+    transform: translateY(-200px); /* Mueve el switch hacia arriba */
+    position: relative; /* Posición relativa */
+    display: flex; /* Muestra los elementos en línea */
+    flex-direction: column; /* Muestra los elementos en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Alinea el contenido al centro */
+    gap: 30px; /* Espacio entre elementos */
+    width: 50px; /* Ancho del switch */
+    height: 20px; /* Alto del switch */
+}
+
+.card-side::before {
+    position: absolute; /* Posición absoluta */
+    content: 'Login'; /* Contenido del pseudo-elemento */
+    left: -70px; /* Posiciona el texto a la izquierda */
+    top: 0; /* Posiciona el texto arriba */
+    width: 100px; /* Ancho del texto */
+    text-decoration: underline; /* Subraya el texto */
+    color: var(--font-color); /* Color del texto */
+    font-weight: 600; /* Peso del texto */
+}
+
+.card-side::after {
+    position: absolute; /* Posición absoluta */
+    content: 'Registro'; /* Contenido del pseudo-elemento */
+    left: 70px; /* Posiciona el texto a la derecha */
+    top: 0; /* Posiciona el texto arriba */
+    width: 100px; /* Ancho del texto */
+    text-decoration: none; /* Quita la subraya del texto */
+    color: var(--font-color); /* Color del texto */
+    font-weight: 600; /* Peso del texto */
+}
+
+.toggle {
+    opacity: 0; /* Opacidad */    
+    width: 0; /* Ancho */
+    height: 0; /* Alto */
+}
+
+.slider {
+    box-sizing: border-box; /* Caja de borde */
+    border-radius: 5px; /* Borde redondeado */
+    border: 2px solid var(--main-color); /* Borde */
+    box-shadow: 4px 4px var(--main-color); /* Sombra */
+    position: absolute; /* Posición absoluta */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    top: 0; /* Posiciona arriba */
+    left: 0; /* Posiciona a la izquierda */
+    right: 0; /* Posiciona a la derecha */
+    bottom: 0; /* Posiciona abajo */
+    background-color: var(--bg-color); /* Color de fondo */
+    transition: 0.3s; /* Transición suave */
+}
+
+.slider:before {
+    box-sizing: border-box; /* Caja de borde */    
+    position: absolute; /* Posición absoluta */
+    content: ""; /* Contenido del pseudo-elemento */
+    height: 20px; /* Alto */
+    width: 20px; /* Ancho */
+    border: 2px solid var(--main-color); /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    left: -2px; /* Posiciona a la izquierda */
+    bottom: 2px; /* Posiciona abajo */
+    background-color: var(--bg-color); /* Color de fondo */
+    box-shadow: 0 3px 0 var(--main-color);  /* Sombra */
+    transition: 0.3s; /* Transición suave */
+}
+/* Estilos para el contenedor de la tarjeta */
+.toggle:checked + .slider {
+    background-color: var(--input-focus); /* Color de fondo al hacer click */
+}
+
+.toggle:checked + .slider:before {
+    transform: translateX(30px); /* Mueve el pseudo-elemento hacia la derecha */
+}
+
+.toggle:checked ~ .card-side:before {
+    text-decoration: none; /* Quita la subraya del texto */
+}
+
+.toggle:checked ~ .card-side:after {
+    text-decoration: underline; /* Subraya el texto */
+}
+
+/* Estilos para la tarjeta */
+.flip-card__inner {
+    width: 300px; /* Ancho */
+    height: 350px; /* Alto */
+    position: relative; /* Posición relativa */
+    background-color: transparent; /* Color de fondo */
+    perspective: 1000px; /* Perspectiva */
+    text-align: center; /* Alinea el texto al centro */
+    transition: transform 0.8s; /* Transición suave */
+    transform-style: preserve-3d;  /* Estilo de transformación */  
+}
+
+.toggle:checked ~ .flip-card__inner {
+    transform: rotateY(180deg); /* Rotación */
+}
+
+.toggle:checked ~ .flip-card__front {
+    box-shadow: none; /* Quita la sombra */
+}
+
+.flip-card__front, .flip-card__back {
+    padding: 20px; /* Espaciado interno */
+    position: absolute; /* Posición absoluta */
+    display: flex; /* Muestra los elementos en línea */
+    flex-direction: column; /* Muestra los elementos en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    -webkit-backface-visibility: hidden; /* Visibilidad de la cara trasera */
+    backface-visibility: hidden; /* Visibilidad de la cara trasera */
+    background: lightgrey; /* Color de fondo */
+    gap: 20px; /* Espacio entre elementos */
+    border-radius: 5px; /* Borde redondeado */
+    border: 2px solid var(--main-color); /* Borde */
+    box-shadow: 4px 4px var(--main-color); /* Sombra */
+}
+
+.flip-card__back {
+    width: 100%; /* Ancho */
+    align-items: center; /* Alinea el contenido al centro */
+    transform: rotateY(180deg); /* Rotación */
+}
+
+.flip-card__form {
+    display: flex;  /* Muestra los elementos en línea */  
+    flex-direction: column; /* Muestra los elementos en columna */
+    align-items: center; /* Alinea el contenido al centro */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.title {
+    margin: 20px 0 20px 0; /* Margen */
+    font-size: 25px; /* Tamaño de la fuente */
+    font-weight: 900; /* Peso de la fuente */
+    text-align: center; /* Alinea el texto al centro */
+    color: var(--main-color); /* Color del texto */
+}
+
+.flip-card__input {
+    width: 250px; /* Ancho */
+    height: 40px; /* Alto */
+    border-radius: 5px; /* Borde redondeado */
+    border: 2px solid var(--main-color); /* Borde */
+    background-color: var(--bg-color); /* Color de fondo */
+    box-shadow: 4px 4px var(--main-color); /* Sombra */
+    font-size: 15px; /* Tamaño de la fuente */
+    font-weight: 600; /* Peso de la fuente */
+    color: var(--font-color); /* Color del texto */
+    padding: 5px 10px;  /* Espaciado interno */
+    outline: none; /* Quita el borde al hacer click */
+}
+
+.flip-card__input::placeholder {
+    color: var(--font-color-sub); /* Color del texto */      
+    opacity: 0.8; /* Opacidad */
+}
+
+.flip-card__input:focus {
+    border: 2px solid var(--input-focus); /* Borde al hacer click */
+}
+
+.flip-card__btn:active, .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color); /* Sombra */
+    transform: translate(3px, 3px); /* Mueve el botón */
+}
+
+.flip-card__btn {
+    margin: 20px 0 20px 0; /* Margen */
+    width: 120px; /* Ancho */
+    height: 40px; /* Alto */
+    border-radius: 5px; /* Borde redondeado */
+    border: 2px solid var(--main-color); /* Borde */
+    background-color: var(--bg-color); /* Color de fondo */
+    box-shadow: 4px 4px var(--main-color); /* Sombra */
+    font-size: 17px; /* Tamaño de la fuente */
+    font-weight: 600; /* Peso de la fuente */
+    color: var(--font-color); /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}

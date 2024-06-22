@@ -1,0 +1,383 @@
+  /* Estilos de la página principal */
+  .titulo {
+    font-family: Kanit, Monaco, monospace; /* Fuente del título */ 
+    text-align: center; /* Alineación del texto al centro */
+    font-weight: bold; /* Peso del título */
+    color: blueviolet; /* Color del título */
+    font-size: 45px; /* Tamaño del título */
+  }
+  /* Estilos del subtítulo */
+  .logo-container {
+    text-align: center; /* Alineación del texto al centro */
+  }
+  /* Estilos del contenedor de las cartas */
+  .fondo-personalizado{
+    background-color: #ddc1f1; /* Color de fondo */
+  }
+  /* Estilos de las cartas */
+  * {
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    box-sizing: border-box; /* Caja de borde */
+  }
+  /* Estilos de la sección */
+  body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    line-height: 1.6; /* Altura de línea */
+  }
+  /* Estilos del contenedor */
+  .container {
+    width: 90%; /* Ancho del contenedor */
+    margin: auto; /* Margen automático */
+    overflow: hidden; /* Oculta el contenido que se desborda */ 
+  }
+  /* Estilos de la cabecera */
+  .container2{
+    text-align: center; /* Alineación del texto al centro */
+  }
+  /* Estilos de la cabecera */
+  header {
+    background: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding-top: 0px; /* Espaciado interno superior */
+    padding-bottom: 10px; /* Espaciado interno inferior */
+    background: radial-gradient(rgb(209, 171, 235), 50% ,rgb(56, 0, 56)); /* Gradiente radial */
+
+  }
+  /* Estilos del menú de navegación */
+  .inicio:hover a { 
+    color: inherit;  /* Color del texto */
+  }
+  /* Estilos del menú de navegación */
+  h2{
+    font-family: Kanit, Monaco, monospace; /* Fuente del texto */ 
+    font-size: 30px; /* Tamaño del texto */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+  }
+  h4{
+    margin-right: 30%; /* Margen derecho */ 
+    color: blueviolet; /* Color del texto */
+  }
+  /* Estilos del menú de navegación */
+  header h1 {
+    float: left; /* Alineación del texto a la izquierda */
+  }
+  /* Estilos del menú de navegación */  
+  nav {
+    float: right; /* Alineación del texto a la derecha */
+    margin-top: 30px; /* Margen superior */
+    display: flex;  /* Cambiado a flex para centrar el contenido */
+    align-items: center;  /* Centra el contenido verticalmente */
+  }
+  nav ul {
+    list-style: none; /* Elimina los marcadores de lista */
+  }
+  nav ul li {  
+    display: inline; /* Muestra en línea */
+    margin-left: 20px; /* Margen izquierdo */
+  }
+  
+  nav ul li:hover {
+    transform: scale(1.1); /* Escala al hacer hover */
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+  nav ul li:hover a {
+    font-size: 18px; /* Tamaño del texto al hacer hover */
+  }
+
+  nav ul li a {
+    color: #ffff; /* Color del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 15px; /* Tamaño del texto */
+  }
+  
+  section {
+    padding: 20px 0; /* Espaciado interno */
+  }
+  /* Estilos del pie de página */
+  footer {
+    padding: 20px; /* Espaciado interno */
+    background-color: #f1f1f1;  /* Color de fondo */
+    color: #8A2BE2; /* Color del texto */
+  } 
+  
+  footer .container {
+    display: flex; /* Cambiado a flex para centrar el contenido */
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;  /* Centra el contenido verticalmente */
+    gap: 20px;  /* Espacio entre elementos */
+    flex-wrap: nowrap;  /* No permite que los elementos se envuelvan */
+  }
+  
+  footer .socialContainer {
+    display: flex; /* Cambiado a flex para centrar el contenido */
+    align-items: center; /* Centra el contenido verticalmente */
+  }
+  
+  footer .socialSvg {
+    width: 24px; /* Ancho del icono */
+    height: 24px; /* Alto del icono */
+    fill: #000;  /* Relleno del icono */
+    transition: fill 0.3s; /* Transición suave */
+  }
+  
+  footer .socialSvg:hover {
+    fill: #0073e6;  /* Relleno del icono al hacer hover */
+  }
+  /* Estilos del botón */
+  .boton_inicio {
+    padding: 17px 40px; /* Espaciado interno del botón */
+    border-radius: 50px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border: 0; /* Borde del botón */
+    background-color: white; /* Color de fondo */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px; /* Sombra del botón */
+    letter-spacing: 1.5px; /* Espaciado de letras */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    font-size: 15px; /* Tamaño del texto */
+    transition: all 0.5s ease; /* Transición suave */
+  }
+  .boton_inicio a {
+    text-decoration: none; /* Sin decoración de texto */
+    color: inherit; /* Color del texto */
+  }
+  
+  .boton_inicio:hover {
+    letter-spacing: 3px; /* Espaciado de letras al hacer hover */
+    background-color: hsl(270, 37%, 62%); /* Color de fondo al hacer hover */
+    color: hsl(0, 0%, 100%); /* Color del texto al hacer hover */
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px; /* Sombra del botón al hacer hover */
+    font-weight: bold; /* Peso del texto al hacer hover */
+  }
+  
+  .boton_inicio:active {
+    letter-spacing: 3px; /* Espaciado de letras al hacer click */
+    background-color: hsl(261deg 80% 48%); /* Color de fondo al hacer click */
+    color: hsl(0, 0%, 100%); /* Color del texto al hacer click */
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px; /* Sombra del botón al hacer click */
+    transform: translateY(10px); /* Transforma el botón al hacer click */
+    transition: 100ms; /* Transición al hacer click */
+  }
+  
+/* Estilos de la barra de búsqueda */
+.searchBox {
+  display: flex; /* Cambiado a flex para centrar el contenido */
+  max-width: 210px; /* Ancho máximo */
+  height: 60px; /* Alto */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: space-between; /* Espacio entre elementos */
+  gap: 8px;   /* Espacio entre elementos */
+  background: #2f3640; /* Color de fondo */
+  border-radius: 50px; /* Borde redondeado */
+  position: relative; /* Posición relativa */
+}
+
+.searchButton {
+  color: white; /* Color del texto */
+  position: absolute; /* Posición absoluta */
+  right: 8px; /* Posición a la derecha */
+  width: 50px; /* Ancho */
+  height: 50px; /* Alto */
+  border-radius: 50%; /* Borde redondeado */
+  background: var(--gradient-2, linear-gradient(90deg, #4f4fbe 0%, #3512b1 100%)); /* Gradiente */
+  border: 0; /* Borde */
+  display: inline-block; /* Muestra en línea */
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); /* Transición suave */
+}
+button:hover {
+  color: #fff; /* Color del texto al hacer hover */
+  background-color: #1A1A1A; /* Color de fondo al hacer hover */
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px; /* Sombra al hacer hover */
+  transform: translateY(-3px); /* Transforma el botón al hacer hover */
+}
+button:active {
+  box-shadow: none; /* Sin sombra al hacer click */
+  transform: translateY(0); /* Transforma el botón al hacer click */
+}
+
+.searchInput {
+  border: none; /* Sin borde */
+  background: none; /* Sin fondo */
+  outline: none; /* Sin contorno */
+  color: white; /* Color del texto */
+  font-size: 15px; /* Tamaño del texto */
+  padding: 24px 46px 24px 26px; /* Espaciado interno */
+}
+
+
+.searchBox {
+  display: flex;  /* Cambiado a flex para centrar el contenido */
+  align-items: center;  /* Centra el contenido verticalmente */
+  margin-left: 20px;  /* Margen izquierdo */
+}
+
+
+#particles-js {
+  height: 100vh; /* Altura */
+  width: 100%; /* Ancho */
+  position: fixed; /* Posición fija */
+  z-index: -1; /* Asegúrate de que las partículas estén detrás del contenido */
+}
+
+/*! Estilo de redes sociales del footer*/
+.card {
+  width: fit-content; /* Ancho */
+  height: fit-content; /* Alto */
+  background-color: rgb(238, 238, 238); /* Color de fondo */
+  display: flex; /* Cambiado a flex para centrar el contenido */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  padding: 25px 25px;   /* Espaciado interno */
+  gap: 20px; /* Espacio entre elementos */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); /* Sombra de la tarjeta */
+}
+
+.socialContainer {
+  width: 52px; /* Ancho */
+  height: 52px; /* Alto */
+  border-radius: 50%; /* Borde redondeado */
+  background-color: rgb(44, 44, 44); /* Color de fondo */
+  display: flex; /* Cambiado a flex para centrar el contenido */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  transition-duration: .3s; /* Duración de la transición */
+}
+/* facebook*/
+.containerOne:hover {
+  background-color: #d62976; /* Color de fondo al hacer hover */
+  transition-duration: .3s; /* Duración de la transición */
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee; /* Color de fondo al hacer hover */
+  transition-duration: .3s; /* Duración de la transición */
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1; /* Color de fondo al hacer hover */
+  transition-duration: .3s; /* Duración de la transición */
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E; /* Color de fondo al hacer hover */
+  transition-duration: .3s; /* Duración de la transición */
+}
+
+.socialContainer:active {
+  transform: scale(0.9); /* Escala al hacer click */
+  transition-duration: .3s; /* Duración de la transición */
+}
+
+.socialSvg {
+  width: 17px; /* Ancho */
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255); /* Relleno */
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;  /* Animación al hacer hover */
+}
+/* Animación de redes sociales */
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*! Swtich de modo oscuro */
+.ui-switch {
+  /* switch */
+  --switch-bg: rgb(255, 255, 255); /* Color de fondo */
+  --switch-width: 48px; /* Ancho */
+  --switch-height: 20px; /* Alto */
+  /* circulo */
+  --circle-diameter: 32px; /* Diámetro */
+  --circle-bg: rgb(141, 13, 158); /* Color de fondo */
+  --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2); /* Inserción */
+  padding-left: 30px; /* Espaciado interno izquierdo */
+  padding-bottom: -70px; /* Espaciado interno inferior */
+}
+
+
+.ui-switch input {
+  display: none; /* Oculta el input */
+}
+
+.slider {
+  -webkit-appearance: none; /* Apariencia de webkit */
+  -moz-appearance: none; /* Apariencia de moz */
+  appearance: none; /* Apariencia */
+  width: var(--switch-width); /* Ancho */
+  height: var(--switch-height); /* Alto */
+  background: var(--switch-bg); /* Color de fondo */
+  border-radius: 999px; /* Borde redondeado */
+  position: relative; /* Posición relativa */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.slider .circle {
+  top: calc(var(--circle-inset) * -1); /* Posición superior */
+  left: 0; /* Posición izquierda */ 
+  width: var(--circle-diameter); /* Ancho */
+  height: var(--circle-diameter); /* Alto */
+  position: absolute; /* Posición absoluta */
+  background: var(--circle-bg); /* Color de fondo */
+  border-radius: inherit;  /* Borde redondeado */
+  /* icono */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiNmZmYiCiAgICAgICAgZD0iTTkuMzA1IDEuNjY3VjMuNzVoMS4zODlWMS42NjdoLTEuMzl6bS00LjcwNyAxLjk1bC0uOTgyLjk4Mkw1LjA5IDYuMDcybC45ODItLjk4Mi0xLjQ3My0xLjQ3M3ptMTAuODAyIDBMMTMuOTI3IDUuMDlsLjk4Mi45ODIgMS40NzMtMS40NzMtLjk4Mi0uOTgyek0xMCA1LjEzOWE0Ljg3MiA0Ljg3MiAwIDAwLTQuODYyIDQuODZBNC44NzIgNC44NzIgMCAwMDEwIDE0Ljg2MiA0Ljg3MiA0Ljg3MiAwIDAwMTQuODYgMTAgNC44NzIgNC44NzIgMCAwMDEwIDUuMTM5em0wIDEuMzg5QTMuNDYyIDMuNDYyIDAgMDExMy40NzEgMTBhMy40NjIgMy40NjIgMCAwMS0zLjQ3MyAzLjQ3MkEzLjQ2MiAzLjQ2MiAwIDAxNi41MjcgMTAgMy40NjIgMy40NjIgMCAwMTEwIDYuNTI4ek0xLjY2NSA5LjMwNXYxLjM5aDIuMDgzdi0xLjM5SDEuNjY2em0xNC41ODMgMHYxLjM5aDIuMDg0di0xLjM5aC0yLjA4NHpNNS4wOSAxMy45MjhMMy42MTYgMTUuNGwuOTgyLjk4MiAxLjQ3My0xLjQ3My0uOTgyLS45ODJ6bTkuODIgMGwtLjk4Mi45ODIgMS40NzMgMS40NzMuOTgyLS45ODItMS40NzMtMS40NzN6TTkuMzA1IDE2LjI1djIuMDgzaDEuMzg5VjE2LjI1aC0xLjM5eiIgLz4KPC9zdmc+");
+  background-repeat: no-repeat; /* Sin repetición */
+  background-position: center center; /* Posición del icono */
+  -webkit-transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; /* Transición de webkit */
+  -o-transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; /* Transición de o */
+  transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; /* Transición */
+  display: -webkit-box; /* Muestra en caja webkit */
+  display: -ms-flexbox; /* Muestra en caja ms */
+  display: flex; /* Muestra en caja */
+  -webkit-box-align: center; /* Alineación de caja webkit */
+  -ms-flex-align: center; /* Alineación de caja ms */
+  align-items: center; /* Centra el contenido verticalmente */
+  -webkit-box-pack: center; /* Empaquetado de caja webkit */
+  -ms-flex-pack: center; /* Empaquetado de caja ms */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12); /* Sombra */
+  ;
+}
+
+.slider .circle::before {
+  content: ""; /* Contenido */
+  position: absolute;  /* Posición absoluta */
+  width: 100%; /* Ancho */
+  height: 100%; /* Alto */
+  background: rgba(255, 255, 255, 0.75); /* Color de fondo */
+  border-radius: inherit; /* Borde redondeado */
+  -webkit-transition: all 500ms; /* Transición de webkit */
+  -o-transition: all 500ms; /* Transición de o */
+  transition: all 500ms; /* Transición */
+  opacity: 0; /* Opacidad */  
+}
+
+/* Cambia el color del círculo al hacer click */
+.ui-switch input:checked+.slider .circle {
+  left: calc(100% - var(--circle-diameter)); /* Posición izquierda */
+  /* icono */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiNmZmYiCiAgICAgICAgZD0iTTQuMiAyLjVsLS43IDEuOC0xLjguNyAxLjguNy43IDEuOC42LTEuOEw2LjcgNWwtMS45LS43LS42LTEuOHptMTUgOC4zYTYuNyA2LjcgMCAxMS02LjYtNi42IDUuOCA1LjggMCAwMDYuNiA2LjZ6IiAvPgo8L3N2Zz4=");
+}
+
+.ui-switch input:active+.slider .circle::before {
+  -webkit-transition: 0s; /* Transición de webkit */
+  -o-transition: 0s; /* Transición de o */
+  transition: 0s; /* Transición */
+  opacity: 1; /* Opacidad */
+  width: 0; /* Ancho */
+  height: 0; /* Alto */
+}

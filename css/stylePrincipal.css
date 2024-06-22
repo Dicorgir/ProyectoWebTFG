@@ -1,0 +1,50 @@
+/* Cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente del cuerpo */
+}
+/* Contenedor principal */
+header {
+    display: flex; /* Cambiado a flex para alinear elementos */
+    justify-content: space-between; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    background-color: #333; /* Color de fondo del encabezado */
+    padding: 10px 20px; /* Espaciado interno del encabezado */
+    color: white; /* Color del texto */
+}
+/* Logo */
+nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0; /* Quita el margen */
+    padding: 0; /* Quita el relleno */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos en línea */
+    margin-right: 20px; /* Margen derecho entre elementos */
+}
+
+nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita la subraya */
+}
+/* Contenedor de usuario */
+.user-info {
+    display: flex; /* Muestra los elementos en línea */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.user-icon {
+    width: 30px; /* Ancho de la imagen */
+    height: 30px; /* Alto de la imagen */
+    border-radius: 50%; /* Borde redondeado */
+    margin-right: 10px; /* Margen derecho */
+}
+
+.user-name {
+    margin-right: 20px; /* Margen derecho */
+}
+
+a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita la subraya */
+}

@@ -1,0 +1,97 @@
+/* Estilos para la sección de tarjetas */
+.card_group {
+  display: flex; /* Muestra los elementos en línea */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 170px; /* Espacio entre las tarjetas */
+}
+
+.card_individual {
+  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+  position: relative;  /* Posición relativa */
+  width: 200px; /* Ajustado para dar más espacio para la imagen y el texto */
+  height: 300px; /* Ajustado para dar más espacio para la imagen y el texto */
+  background-color: #ffffff; /* Color de fondo de la tarjeta */
+  display: flex; /* Muestra los elementos en línea */
+  flex-direction: column; /* Muestra los elementos en columna */
+  align-items: center; /* Alinea el contenido al centro horizontalmente */
+  justify-content: flex-end; /* Alinea el contenido al final verticalmente */
+  padding: 12px;  /* Espaciado interno del contenido */
+  gap: 0; /* Reducido para acercar la imagen y el texto */
+  border-radius: 8px; /* Borde redondeado de la tarjeta */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  color: white; /* Color del texto */
+}
+
+.card_individual::before {
+  content: ''; /* Contenido del pseudo-elemento */
+  position: absolute; /* Posición absoluta para superponer */
+  inset: 0; /* Posiciona el gradiente en todo el contenedor */
+  left: -5px; /* Ajustado para que el borde se ajuste al nuevo tamaño de la tarjeta */
+  margin: auto; /* Centra el gradiente */
+  width: 200px; /* Ajustado para que el borde se ajuste al nuevo tamaño de la tarjeta */
+  height: 310px; /* Ajustado para que el borde se ajuste al nuevo tamaño de la tarjeta */
+  border-radius: 10px; /* Borde redondeado del gradiente */
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%); /* Gradiente */
+  z-index: -10; /* Coloca el gradiente detrás del contenido */
+  pointer-events: none; /* Evita que el pseudo-elemento sea interactivo */
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición suave */
+}
+
+.card_individual::after {
+  content: ""; /* Contenido del pseudo-elemento */
+  z-index: -1;  /* Coloca el gradiente detrás del contenido */
+  position: absolute; /* Posición absoluta para superponer */
+  inset: 0; /* Posiciona el gradiente en todo el contenedor */
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);  /* Gradiente */
+  transform: translate3d(0, 0, 0) scale(0.95); /* Escala del gradiente */
+  filter: blur(20px); /* Aplica un desenfoque al gradiente */
+}
+
+.card_individual:hover::after {
+  filter: blur(30px); /* Ajusta el desenfoque al hacer hover */
+}
+
+.card_individual:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);  /* Rotación y escala al hacer hover */
+}
+
+.card_individual img {
+  max-width: 100%; /* Ajusta el ancho de la imagen */
+  border-radius: 8px; /* Borde redondeado de la imagen */
+}
+
+.heading_individual {
+  font-size: 20px; /* Tamaño del título */
+  text-transform: capitalize; /* Transforma el texto a mayúsculas */
+  font-weight: 700; /* Tipo del título */
+  margin-top: 6px; /* Reducido para acercar la imagen y el texto */
+  text-align: center; /* Centra el texto */
+}
+
+.card_individual p:not(.heading) {
+  font-size: 14px; /* Tamaño del texto */
+  text-align: center; /* Centra el texto */
+}
+
+.card_individual p:last-child {
+  color: #e81cff; /* Color del texto */
+  font-weight: 600; /* Tipo del texto */
+}
+
+/* REDES */
+
+#github:hover {
+  color: #c9510c; /* Cambia el color al hacer hover */
+}
+
+#instagram:hover {
+  color: #d62976; /* Cambia el color al hacer hover */
+}
+
+#linkeding:hover {
+  color: #3b5998; /* Cambia el color al hacer hover */
+}
+
+#twitter:hover {
+  color: #00acee; /* Cambia el color al hacer hover */
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- Se establece el documento HTML -->
+<html lang="en"> <!-- Se establece el idioma del documento -->
+<head> <!-- Se establece la cabecera del documento -->
+    <meta charset="UTF-8"> <!-- Se establece la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se establece la escala de la página -->
+    <title>INICIO SESIÓN/REGISTRO</title> <!-- Se establece el título de la página -->
+    <link rel="stylesheet" href="css/styleInicioSesion.css"> <!-- Se establece la hoja de estilos de la página -->
+    <link rel="icon" href="img/logo-davag-studio.ico" type="image/x-icon"> <!-- Se establece el ícono de la página -->
+</head>
+<body>
+    <div class="wrapper"> <!-- Se establece el contenedor principal de la página -->
+        <div id="particles-js"></div> <!-- Se establece el contenedor de las partículas -->
+        <div class="card-switch"> <!-- Se establece el contenedor de la tarjeta de inicio de sesión y registro -->
+            <label class="switch"> <!-- Se establece el interruptor de la tarjeta de inicio de sesión y registro -->
+               <input type="checkbox" class="toggle"> <!-- Se establece el interruptor de la tarjeta de inicio de sesión y registro -->
+               <span class="slider"></span> <!-- Se establece el interruptor de la tarjeta de inicio de sesión y registro -->
+               <span class="card-side"></span> <!-- Se establece el interruptor de la tarjeta de inicio de sesión y registro -->
+               <div class="flip-card__inner"> <!-- Se establece el contenedor de la tarjeta de inicio de sesión y registro -->
+                  <div class="flip-card__front"> <!-- Se establece el contenedor de la tarjeta de inicio de sesión y registro -->
+                     <div class="title">LOGIN</div> <!-- Se establece el título de la tarjeta de inicio de sesión y registro -->
+                     <form class="flip-card__form" action="php/login.php" method="post"> <!-- Se establece el formulario de la tarjeta de inicio de sesión y registro -->
+                        <label for="login-email">Email</label> <!-- Se establece la etiqueta del campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <input id="login-email" class="flip-card__input" name="email" placeholder="Pon tu Email..." type="email" required> <!-- Se establece el campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <label for="login-password">Contraseña</label> <!-- Se establece la etiqueta del campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <input id="login-password" class="flip-card__input" name="password" placeholder="Pon tu contraseña..." type="password" required> <!-- Se establece el campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <button class="flip-card__btn">ACEPTAR</button> <!-- Se establece el botón de la tarjeta de inicio de sesión y registro -->
+                     </form>
+                  </div>
+                  <div class="flip-card__back"> <!-- Se establece el contenedor de la tarjeta de inicio de sesión y registro -->
+                     <div class="title">REGISTRO</div> <!-- Se establece el título de la tarjeta de inicio de sesión y registro -->
+                     <form class="flip-card__form" action="php/registro.php" method="post"> <!-- Se establece el formulario de la tarjeta de inicio de sesión y registro -->
+                        <label for="signup-name">Nombre</label> <!-- Se establece la etiqueta del campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <input id="signup-name" class="flip-card__input" name="name" placeholder="Tu nombre..." type="text" required> <!-- Se establece el campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <label for="signup-email">Correo Electrónico</label> <!-- Se establece la etiqueta del campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <input id="signup-email" class="flip-card__input" name="email" placeholder="Tu Email..." type="email" required> <!-- Se establece el campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <label for="signup-password">Contraseña</label> <!-- Se establece la etiqueta del campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <input id="signup-password" class="flip-card__input" name="password" placeholder="Tu constraseña" type="password" required> <!-- Se establece el campo de texto de la tarjeta de inicio de sesión y registro -->
+                        <button class="flip-card__btn">HECHO</button> <!-- Se establece el botón de la tarjeta de inicio de sesión y registro -->
+                     </form>
+                  </div>
+               </div>
+            </label>
+        </div>   
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> <!-- Se establece la librería de partículas -->
+   <script src="js/poligonosParticulas.js"></script> <!-- Se establece el script de las partículas -->
+</body>
+</html>

@@ -1,0 +1,179 @@
+.card-container {
+  display: flex;
+  justify-content: center; /* Cambiado a flex-start para juntar las tarjetas */
+  gap: 40px; /* Espacio entre las tarjetas, ajusta según sea necesario */
+  margin: 20px; /* Ajusta el margen según sea necesario */
+}
+/* Estilos de las tarjetas */
+.card_games { 
+  width: 400px;  /* Ajusta el ancho de la tarjeta según sea necesario */
+  height: 350px; /* Ajusta el alto de la tarjeta según sea necesario */
+  background-color: #F7F7F7; /* Color de fondo de la tarjeta */
+  border-radius: 10px; /* Borde redondeado de la tarjeta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+  display: flex; /* Cambiado a flex para centrar el contenido */
+  flex-direction: column; /* Cambiado a column para centrar el contenido */
+  justify-content: center; /* Centra el contenido verticalmente */ 
+  align-items: center; /* Centra el contenido horizontalmente */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  position: relative; /* Posición relativa para el pseudo-elemento */
+  transition: all 0.3s ease; /* Transición suave al hacer hover */
+}
+/* Efecto de gradiente al hacer hover */
+.card_games:before {
+  content: ""; /* Contenido del pseudo-elemento */
+  position: absolute; /* Posición absoluta para superponer */
+  top: -100%; /* Posiciona el gradiente arriba */
+  left: -100%; /* Posiciona el gradiente a la izquierda */
+  width: 100%; /* Ancho del gradiente */
+  height: 100%; /* Alto del gradiente */
+  background: linear-gradient(to bottom right, #af73cb, #8b76b7); /* Gradiente */
+  transform: rotate(-45deg); /* Rotación del gradiente */
+  transition: all 0.3s ease; /* Transición suave */
+  z-index: -1; /* Coloca el gradiente detrás del contenido */
+}
+/* Efecto de escala y sombra al hacer hover */
+.card_games:hover {
+  transform: scale(1.05); /* Escala al hacer hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+/* Posiciona el gradiente al hacer hover */
+.card_games:hover:before {
+  top: 0; /* Posiciona el gradiente arriba */
+  left: 0; /* Posiciona el gradiente a la izquierda */
+}
+/* Contenido de la tarjeta */
+.card-content_games {
+  padding: 20px; /* Espaciado interno del contenido */
+  text-align: center; /* Alineación del texto al centro */
+}
+/* Estilos del título */
+.card-title_games_mario {
+  font-family: 'Arial', sans-serif; /* Fuente del título */
+  font-size: 24px; /* Tamaño del título */
+  font-weight: bold; /* Peso del título */
+  margin-bottom: 10px; /* Margen inferior del título */
+  color: #333; /* Color del título */
+}
+
+/* Estilos de la descripción */
+.card-description_games { 
+  font-size: 16px; /* Tamaño de la descripción */
+  color: #0b0b0b; /* Color de la descripción */
+  margin-bottom: 20px; /* Margen inferior de la descripción */
+}
+/* Estilos del botón */
+.card-button_games {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  background-color: #8c3f96; /* Color de fondo del botón */
+  color: #FFF; /* Color del texto del botón */
+  border: none; /* Borde del botón */
+  border-radius: 4px; /* Borde redondeado del botón */ 
+  font-size: 18px; /* Tamaño del texto del botón */ 
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s ease; /* Transición suave al hacer hover */
+}
+/* Efecto de color al hacer hover */
+.card-button_games:hover { 
+  background-color: #7922bb; /* Cambia el color de fondo al hacer hover */
+}
+/* Estilos de la imagen */
+.card_image_game {
+  width: 600px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 350px; /* Ajusta el alto de la imagen según sea necesario */
+  border-radius: 1rem; /* Borde redondeado de la imagen */
+  background-image: url('https://cdn.milenio.com/uploads/media/2021/02/25/super-mario-bros-nintendo.jpg'); /* URL de la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; /* Sombra de la imagen */
+}
+/* Efecto de escala al hacer hover */
+.card_image_game:hover { 
+    transform: scale(1.1); /* Escala al hacer hover */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+/* Estilos de la imagen */
+.card_image_game2 {
+  width: 600px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 350px; /* Ajusta el alto de la imagen según sea necesario */
+  border-radius: 1rem; /* Borde redondeado de la imagen */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJHVz4Ytq3Uxj1AATP9I0jLizBzZHZX-1tg&s'); /* URL de la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; /* Sombra de la imagen */
+}
+/* Efecto de escala al hacer hover */
+.card_image_game2:hover {
+    transform: scale(1.1); /* Escala al hacer hover */
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+
+/* Estilos de la imagen */
+ .card_image_game3 {
+    width: 600px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 350px; /* Ajusta el alto de la imagen según sea necesario */
+    border-radius: 1rem; /* Borde redondeado de la imagen */
+    background-image: url('https://th.bing.com/th/id/OIG2.uR4ii6T6Aw2PU4ioUxul?w=1024&h=1024&rs=1&pid=ImgDetMain'); /* URL de la imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; /* Sombra de la imagen */
+  }
+  /* Efecto de escala al hacer hover */
+  .card_image_game3:hover {
+      transform: scale(1.1); /* Escala al hacer hover */
+      transition: transform 0.3s ease; /* Transición suave */
+    } 
+  
+/* Estilos de la imagen */
+  .modal { 
+  display: none; /* Oculta el modal por defecto */
+  position: fixed; /* Posición fija para superponer */
+  z-index: 1; /* Coloca el modal encima de los demás elementos */
+  left: 0; /* Posiciona el modal a la izquierda */
+  top: 0; /* Posiciona el modal arriba */
+  width: 100%;  /* Ancho del modal */
+  height: 100%;  /* Alto del modal */
+  overflow: auto; /* Permite desplazarse por el contenido */
+  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo del modal */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+}
+/* Estilos del contenido del modal */
+.modal-content {
+  background-color: #fefefe; /* Color de fondo del contenido */
+  margin: 10% auto;  /* Margen del contenido */
+  padding: 20px; /* Espaciado interno del contenido */
+  border: 1px solid #888; /* Borde del contenido */
+  width: 50%;  /* Ancho del contenido */
+  height: 50%; /* Alto del contenido */
+  border-radius: 10px; /* Borde redondeado del contenido */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra del contenido */
+  overflow-y: auto;  /* Permite desplazarse verticalmente */
+}
+/* Estilos del botón de cierre */
+.close {
+  color: #aaa; /* Color del botón de cierre */
+  float: right; /* Posiciona el botón a la derecha */
+  font-size: 28px; /* Tamaño del botón de cierre */
+  font-weight: bold; /* Peso del botón de cierre */
+}
+
+/* Efecto de color al pasar el ratón */
+.close:hover,
+.close:focus {
+  color: black; /* Cambia el color al pasar el ratón */
+  text-decoration: none; /* Quita la decoración al pasar el ratón */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+/* Estilos del título del modal */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 80%; /* Ancho del contenido en pantallas pequeñas */
+    height: 60vh; /* Alto del contenido en pantallas pequeñas */
+  }
+}
+
+/* Estilos del título principal */
+.tituloPrincipal {
+  margin: 50px; /* Ajusta el margen según sea necesario */
+}
